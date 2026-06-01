@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.kartu {
+    background: #1e1e2e;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    width: 300px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.foto-profil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00ffff;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #00ffff;
+    margin: 10px 0;
+}
+
+.job {
+    color: #aaa;
+    margin: 5px 0;
+}
+
+.bio {
+    font-size: 14px;
+    color: #ccc;
+    margin: 15px 0;
+}
+
+.sosmed {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00ffff;
+    color: #1e1e2e;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
