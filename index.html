@@ -34,12 +34,31 @@
 </head>
 <body>
     <div class="card">
-        <img src="foto.jpg" alt="Foto Samid" class="profile">
-        <h1> SELAMAT DATANG👋 </h1>
-        <p class="tagline">SAMID</p>
-        <p style="margin-bottom:30px">
-            "It all seems impossible until it's proven."Nelson Mandela"</p>
-        <a href="halaman2.html" class="btn">Deskripsi</a>
+  <p class="tagline">SAMID</p>
+  <h1 id="typing-text" style="min-height: 60px;"></h1>
+  <p id="typing-author" style="opacity:0;">- Nelson Mandela -</p>
+  <a href="halaman2.html" class="btn">Deskripsi</a>
     </div>
+ <script>
+  const text = `"It all seems impossible until it's done."`;
+  const author = `- Nelson Mandela -`;
+  let i = 0;
+  const speed = 60; // 
+  
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("typing-text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    } else {
+      // Munculin nama author setelah quote selesai
+      document.getElementById("typing-author").style.opacity = 1;
+      document.getElementById("typing-author").style.transition = "opacity 1s";
+    }
+  }
+  
+  // Mulai ngetik pas halaman kebuka
+  window.onload = typeWriter;
+</script>
 </body>
 </html>
