@@ -3,20 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio SAMID</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Samid | Website Pertama Gue</title>
+    <style>
+        * {margin:0; padding:0; box-sizing:border-box}
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; min-height: 100vh;
+            display: flex; align-items: center; justify-content: center;
+            text-align: center; padding: 20px;
+        }
+        .card {
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);
+            border-radius: 20px; padding: 40px; max-width: 500px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .profile {
+            width: 120px; height: 120px; border-radius: 50%;
+            object-fit: cover; border: 3px solid white; margin-bottom: 20px;
+        }
+        h1 {font-size: 2.2em; margin-bottom: 10px}
+        .tagline {font-size: 1.1em; opacity: 0.9; margin-bottom: 30px}
+        .btn {
+            display: inline-block; background: white; color: #667eea;
+            padding: 12px 30px; border-radius: 50px; text-decoration: none;
+            font-weight: bold; margin: 5px; transition: 0.3s;
+        }
+        .btn:hover {transform: scale(1.05)}
+    </style>
 </head>
 <body>
-    <div class="kartu">
-        <img src="foto.jpg" alt="Foto Profil" class="foto-profil">
-        <h1>SAMID</h1>
-        <p class="job">Selamat Datang</p>
-        <p class="bio">A winner is a dreamer who never give up "Nelson mandela"</p>
-        
-        <div class="sosmed">
-          <a href="halaman2.html" class="btn">Masuk</a>
-           
-        </div>
+    <div class="card">
+        <img src="foto.jpg" alt="Foto Samid" class="profile">
+        <h1>Halo, Gua Samid 👋</h1>
+        <p class="tagline">Ngoding dari HP & Laptop | Baru Belajar</p>
+        <p style="margin-bottom:30px">
+            Ini website pertama gua yg beneran online pake Github Pages!
+        </p>
+        <a href="halaman2.html" class="btn">Tentang Gue</a>
+        <a href="https://wa.me/6289666492566" class="btn">Chat WA</a>
     </div>
 </body>
 </html>
