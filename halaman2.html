@@ -1,14 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>About SAMID</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Samid</title>
+    <style>
+        * {margin:0; padding:0; box-sizing:border-box}
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; min-height: 100vh;
+            display: flex; align-items: center; justify-content: center;
+            text-align: center; padding: 20px;
+        }
+        .card {
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);
+            border-radius: 20px; padding: 40px; max-width: 500px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .btn {
+            display: inline-block; background: white; color: #667eea;
+            padding: 12px 30px; border-radius: 50px; text-decoration: none;
+            font-weight: bold; margin-top: 20px; transition: 0.3s;
+        }
+        .btn:hover {transform: scale(1.05)}
+    </style>
 </head>
 <body>
-  <div class="card">
-    <h1>KATA PENGANTAR</h1>
-    <p>Isi tentang lu, skill, projek, dll.</p>
-    <a href="index.html" class="btn">Kembali</a>
-  </div>
+    <div class="card">
+        <h1>Tentang Gua 📝</h1>
+        <p style="margin: 20px 0; line-height: 1.6;">
+            Nama gua Samid. Baru belajar bikin website dari HP pake Termux, 
+            sekarang lanjut di laptop pake VS Code. <br><br>
+            Cita-cita pengen jadi programmer biar bisa bikin aplikasi sendiri.
+            Tool favorit: Git, HTML, CSS.
+        </p>
+        <a href="index.html" class="btn">Balik ke Home</a>
+    </div>
 </body>
 </html>
