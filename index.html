@@ -3,180 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#4f46e5"/>
-    <title>Samid - Developer & Problem Solver</title>
-    <meta name="description" content="Portofolio Samid - Ngoding PWA & tools yang beneran kepake">
-    <style>
-        :root {
-            --bg1: #667eea;
-            --bg2: #764ba2;
-            --card: rgba(255,255,255,0.1);
-            --text: #fff;
-            --accent: #a5b4fc;
-        }
-        [data-theme="light"] {
-            --bg1: #e0e7ff;
-            --bg2: #c7d2fe;
-            --card: rgba(255,255,255,0.7);
-            --text: #1e1b4b;
-            --accent: #4f46e5;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, var(--bg1), var(--bg2));
-            color: var(--text);
-            min-height: 100vh;
-            transition: all 0.3s ease;
-        }
-        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-        .theme-toggle {
-            position: fixed; top: 20px; right: 20px;
-            background: var(--card); border: none; border-radius: 50%;
-            width: 45px; height: 45px; font-size: 20px; cursor: pointer;
-            backdrop-filter: blur(10px);
-        }
-        .hero {
-            background: var(--card);
-            border-radius: 24px;
-            padding: 30px 20px;
-            text-align: center;
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(255,255,255,0.2);
-            margin-top: 40px;
-        }
-        .avatar {
-            width: 120px; height: 120px; border-radius: 50%;
-            border: 4px solid var(--accent); object-fit: cover;
-            margin: 0 auto 15px;
-        }
-        h1 { font-size: 28px; margin-bottom: 10px; }
-        .quote { font-size: 20px; font-style: italic; margin: 15px 0; opacity: 0.9; }
-        .author { opacity: 0.7; margin-bottom: 20px; }
-        .btn {
-            background: var(--accent); color: #1e1b4b;
-            border: none; padding: 14px 28px; border-radius: 50px;
-            font-weight: 600; font-size: 16px; cursor: pointer;
-            transition: transform 0.2s; display: inline-block; text-decoration: none;
-        }
-        .btn:hover { transform: scale(1.05); }
-        .section {
-            background: var(--card); border-radius: 20px; padding: 25px;
-            margin-top: 25px; backdrop-filter: blur(15px);
-            border: 1px solid rgba(255,255,255,0.2);
-            display: none; animation: fadeIn 0.5s;
-        }
-        @keyframes fadeIn { from {opacity: 0; transform: translateY(10px);} to {opacity: 1; transform: translateY(0);} }
-        .section h2 { color: var(--accent); margin-bottom: 15px; font-size: 22px; }
-        .section p { line-height: 1.7; opacity: 0.9; margin-bottom: 15px; }
-        .skills { display: flex; flex-wrap: wrap; gap: 10px; }
-        .skill-tag {
-            background: rgba(165,180,252,0.2); border: 1px solid var(--accent);
-            padding: 8px 16px; border-radius: 20px; font-size: 14px;
-        }
-        .project-card {
-            background: rgba(0,0,0,0.2); padding: 15px; border-radius: 12px;
-            margin-bottom: 15px; border-left: 3px solid var(--accent);
-        }
-        .project-card b { font-size: 17px; }
-        .status { 
-            background: rgba(34,197,94,0.2); border: 1px solid #22c55e;
-            padding: 10px; border-radius: 12px; margin: 15px 0; font-size: 14px;
-        }
-        .contact-btn {
-            display: block; width: 100%; margin: 10px 0; text-align: center;
-        }
-        .btn-wa { background: #25D366; color: white; }
-        .btn-github { background: #333; color: white; }
-    </style>
+    <title>Portofolio SAMID</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
-    
-    <div class="container">
-        <div class="hero">
-            <img src="foto.jpg" alt="foto jpg">
-            <h1>SAMID</h1>
-            <p class="quote" id="quote-text">"It all seems impossible until it's done."</p>
-            <p class="author" id="quote-author">- Nelson Mandela -</p>
-            <button class="btn" onclick="showSection()">Lihat Profil Lengkap</button>
-        </div>
-
-        <div class="section" id="main-content">
-            <div class="status">🔥 Status: <b id="live-status">Lagi ngembangin PWA Absen Keluarga</b></div>
-
-            <h2>👋 Halo, Saya Samid</h2>
-            <p>
-                Saya percaya semua yang mustahil bisa selesai asal dikerjain. 
-                Fokus saya sekarang: bikin aplikasi web sederhana tapi bener-bener kepake 
-                buat kerjaan sehari-hari & keluarga. No basa-basi, langsung jadi.
-            </p>
-
-            <h2>🔧 Skill Utama</h2>
-            <div class="skills">
-                <span class="skill-tag">HTML</span>
-                <span class="skill-tag">CSS</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">PWA</span>
-                <span class="skill-tag">Termux</span>
-                <span class="skill-tag">GitHub Pages</span>
-            </div>
-
-            <h2>🚀 Project Nyata</h2>
-            <div class="project-card">
-                <b>Aplikasi absen keluarga</b><br>
-                Aplikasi absen + selfie untuk tim lapangan. 100% offline, bisa export Excel.
-                <br><a href="#" style="color:var(--accent);">Demo Segera</a>
-            </div>
-            <div class="project-card">
-                <b>Absen Keluarga</b><br>
-                Catat kegiatan harian keluarga + foto. Data kesimpen di HP, aman.
-                <br><a href="#" style="color:var(--accent);">Demo Segera</a>
-            </div>
-
-            <h2>📱 Hubungi Saya</h2>
-            <a href="https://wa.me/6289670566678" class="btn contact-btn btn-wa">Chat WhatsApp</a>
-            <a href="https://samidsam7-png.github.io" class="btn contact-btn btn-github">GitHub Saya</a>
+    <div class="kartu">
+        <img src="foto.jpg" alt="Foto Profil" class="foto-profil">
+        <h1>SAMID</h1>
+        <p class="job">Web Developer Pemula</p>
+        <p class="bio">Halo! Aku lagi belajar bikin website pakai Termux. Senang bisa ketemu kamu!</p>
+        
+        <div class="sosmed">
+            <a href="#" class="btn">Tiktok</a>
+            <a href="#" class="btn">Instagram</a>
+            <a href="#" class="btn">WhatsApp</a>
         </div>
     </div>
-
-    <script>
-        // 1. Dark Mode Toggle
-        function toggleTheme() {
-            const body = document.body;
-            const btn = document.querySelector('.theme-toggle');
-            if (body.getAttribute('data-theme') === 'light') {
-                body.removeAttribute('data-theme');
-                btn.textContent = '🌙';
-                localStorage.setItem('theme', 'dark');
-            } else {
-                body.setAttribute('data-theme', 'light');
-                btn.textContent = '☀️';
-                localStorage.setItem('theme', 'light');
-            }
-        }
-        if (localStorage.getItem('theme') === 'light') {
-            document.body.setAttribute('data-theme', 'light');
-            document.querySelector('.theme-toggle').textContent = '☀️';
-        }
-
-        // 2. Show Section
-        function showSection() {
-            document.getElementById('main-content').style.display = 'block';
-            document.querySelector('.hero .btn').style.display = 'none';
-        }
-
-        // 3. Quote Harian Otomatis
-        const quotes = [
-            { text: "It all seems impossible until it's done.", author: "Nelson Mandela" },
-            { text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
-            { text: "Code is like humor. When you have to explain it, it’s bad.", author: "Cory House" },
-            { text: "Kerja keras tidak akan mengkhianati hasil.", author: "Pepatah" }
-        ];
-        const day = new Date().getDate();
-        const quote = quotes[day % quotes.length];
-        document.getElementById('quote-text').textContent = `"${quote.text}"`;
-        document.getElementById('quote-author').textContent = `- ${quote.author} -`;
-    </script>
 </body>
 </html>
