@@ -1,7 +1,0 @@
-#!/data/data/com.termux/files/usr/bin/bash
-cd ~/portfolio-samid
-python -m http.server 8080 & 
-sleep 2
-termux-open-url http://localhost:8080
-echo "Server jalan di http://localhost:8080"
-echo "Matiin pake: pkill python"
