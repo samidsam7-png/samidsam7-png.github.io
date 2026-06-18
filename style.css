@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f1f1f1;
+}
+
+/* SIDEBAR MERAH KIRI */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: #c0392b;
+    z-index: 100;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar ul li a:hover {
+    background: #a93226;
+}
+
+/* HEADER MERAH ATAS */
+.header {
+    background: #c0392b;
+    color: white;
+    padding: 15px 20px;
+    margin-left: 200px; /* Biar gak ketiban sidebar */
+    height: 55px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* KONTEN PUTIH TENGAH */
+.content {
+    background: white;
+    margin-left: 200px;
+    padding: 30px 40px;
+    flex: 1; /* Dorong footer ke bawah */
+}
+
+.content h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.content p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* FOOTER MERAH BAWAH */
+.footer {
+    background: #c0392b;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-left: 200px;
+}
+
+/* Biar responsif di HP */
+@media (max-width: 768px) {
+    .sidebar { width: 150px; }
+    .header, .content, .footer { margin-left: 150px; }
+}
