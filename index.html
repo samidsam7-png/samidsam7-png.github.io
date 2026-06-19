@@ -20,6 +20,7 @@
             background: #c0392b; color: white; width: 250px;
             height: 100vh; position: fixed; left: -250px; top: 0;
             padding-top: 60px; transition: 0.3s; z-index: 99;
+            display: flex; flex-direction: column;
         }
         .sidebar.active { left: 0; }
         .sidebar a {
@@ -34,9 +35,12 @@
         }
         .overlay.active { display: block; }
         .copyright {
-            position: absolute; bottom: 20px; width: 100%; 
-            text-align: center; font-size: 11px; padding: 0 15px;
+            margin-top: auto; 
+            text-align: center; 
+            font-size: 11px; 
+            padding: 20px 15px;
             color: #f5b7b1;
+            border-top: 1px solid #a93226;
         }
     </style>
 </head>
@@ -54,13 +58,13 @@
         <a href="#">Services</a>
         <a href="#">Contact</a>
         <div class="copyright">
-            &copy; 2026 Hak cipta Dilindungi<br>All Rights Reserved
+            &copy; 2026 Samid <br>All Rights Reserved
         </div>
     </div>
 
     <div class="content">
         <h1>Selamat Datang di Website saya</h1>
-        <p>ini adalah cara membuat website dengan terminal linux HTML dan Css.</p>
+        <p>Ini adalah cara membuat website dengan Termux + GitHub Pages</p>
     </div>
 
     <script>
