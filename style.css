@@ -121,16 +121,17 @@ body {
 footer {
     text-align: center;
     padding: 30px 20px;
-    background: #111;
-    color: #888;
+    background: #C0392b;
+    color: #fff;
     margin-top: 80px;
-    border-top: 1px solid #333;
+    border-top: none;
 }
 footer p {
     margin: 8px 0;
     font-size: 14px;
+    color: #fff;
 }
 footer p:first-child {
     font-weight: 500;
-    color: #aaa;
+    color: #fff;
 }
