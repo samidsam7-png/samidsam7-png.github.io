@@ -118,3 +118,19 @@ body {
    	 transform: translateY(0);
    	 pointer-events: auto;
 }
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #111;
+    color: #888;
+    margin-top: 80px;
+    border-top: 1px solid #333;
+}
+footer p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+footer p:first-child {
+    font-weight: 500;
+    color: #aaa;
+}
