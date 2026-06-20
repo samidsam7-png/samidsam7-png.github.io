@@ -44,13 +44,3 @@ body { font-family: Arial, sans-serif; background: #f4f4f4; }
     background: rgba(0,0,0,0.5); display: none; z-index: 98;
 }
 .overlay.active { display: block; }
-
-/* INI YG PALING PENTING BIAR HALAMAN GAK NUMPUK */
-.content {
-    margin-top: 60px; padding: 20px; position: relative; overflow: hidden;
-}
-.halaman {
-    position: absolute; top: 0; left: 0; width: 100%; padding: 20px;
-    opacity: 0; transform: translateY(20px); transition: 0.4s ease;
-    pointer-events: none;
-}

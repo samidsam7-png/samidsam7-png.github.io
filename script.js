@@ -28,5 +28,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-// Auto update tahun copyright
-document.getElementById('tahun').textContent = new Date().getFullYear();
