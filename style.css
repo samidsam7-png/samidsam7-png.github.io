@@ -11,7 +11,7 @@ body {
 
 .header {
    	 height: 60px;
- 	 background: #c0392b;
+ 	 background: transparent !important;
 	 color: white;
    	 display: flex;
  	 align-items: center; 
@@ -21,6 +21,8 @@ body {
 	 left: 0;
 	 width: 100%;
 	 z-index: 100;
+	 padding: 0;
+	 margin: 0;
 }
 
 .menu-toggle {
@@ -52,13 +54,14 @@ body {
 .sidebar {
    	 position: fixed;
 	 top: 0;
-	 left: -250px;
+	 left: 0;
+	 padding-bottom: 120px;
 	 width: 250px;
-	 height: 100vh;
+	 height: 100%;
     	 background: #2c3e50;
-	 padding-top: 60px;
 	 transition: 0.3s;
-	 z-index: 99;
+	 overflow-y: auto;
+	 z-index: 1000;
 }
 .sidebar.active {
 	 left: 0;
@@ -133,7 +136,8 @@ footer {
     background: #C0392b;
     color: #fff;
     margin-top: 80px;
-    border-top: none;
+    position: relative;
+    z-indez: 1;
 }
 footer p {
     margin: 8px 0;
