@@ -1,65 +1,51 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sam7 Developer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samidsam7-png</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Header Merah -->
-    <header>
-        <div class="menu-btn" onclick="toggleSidebar()">☰</div>
-        <div class="logo">Sam7 Developer</div>
-    </header>
+  <header>
+    <div class="logo">Samidsam7-png</div>
+    <nav class="navbar">
+      <a href="#home" onclick="showPage('home')">Home</a>
+      <a href="#about" onclick="showPage('about')">About</a>
+      <a href="#services" onclick="showPage('services')">Services</a>
+      <a href="#contact" onclick="showPage('contact')">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Overlay Gelap -->
-    <div class="overlay" onclick="toggleSidebar()"></div>
+  <main>
+    <section id="home" class="page active">
+      <h1>Selamat Datang di website saya</h1>
+      <p>Menerima pembuatan website awal dan perbaikan website</p>
+    </section>
 
-    <!-- Sidebar Menu -->
-    <div class="sidebar">
-        <ul>
-            <li><a href="#home" onclick="toggleSidebar()">Home</a></li>
-            <li><a href="#about" onclick="toggleSidebar()">About</a></li>
-            <li><a href="#services" onclick="toggleSidebar()">Services</a></li>
-            <li><a href="#contact" onclick="toggleSidebar()">Contact</a></li>
-        </ul>
-    </div>
+    <section id="about" class="page">
+      <h1>About</h1>
+      <p>Saya Samid, web developer dari Indonesia. Spesialis bikin website.</p>
+    </section>
 
-    <!-- Konten Utama -->
-    <main>
-        <section id="home" class="page active">
-            <h1>Home</h1>
-            <p>Halaman utama.</p>
-        </section>
+    <section id="services" class="page">
+      <h1>Services</h1>
+      <p>Layanan: Web Design, Landing Page,</p>
+    </section>
 
-        <section id="about" class="page">
-            <h1>About</h1>
-            <p>Tentang saya.</p>
-        </section>
+    <section id="contact" class="page">
+      <h1>Contact</h1>
+      <p>Email: samidsam7@gmail.com | WA: 089666492566</p>
+    </section>
+  </main>
 
-        <section id="services" class="page">
-            <h1>Services</h1>
-            <p>Layanan yang tersedia.</p>
-        </section>
+  <footer>
+    <p>&copy; 2026 Hak Cipta Dilindungi</p>
+  </footer>
 
-        <section id="contact" class="page">
-            <h1>Contact</h1>
-            <p>Hubungi saya.</p>
-        </section>
-    </main>
-	<footer>
-    <p>&copy; <span id= "tahun-copyright"></span> sam7-png. All Rights Reserved.</p>
-    <p>Indonesia</p>
-</footer>
+  <script src="script.js"></script>
 </body>
-</html>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 sam7-png. All Rights Reserved. Indonesia</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
 </html>
