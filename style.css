@@ -1,6 +1,8 @@
 * {	 margin: 0;
 	 padding: 0;
 	 box-sizing: border-box;
+	 background: #2C3E50;
+	 color: #fff;
  }
 
 body {
@@ -104,6 +106,10 @@ body {
          position: relative; 
          overflow: hidden;
 }
+
+.content, main, .container {
+	color: #fff;
+	padding: 20px;
 .halaman {
    	 position: absolute; 
    	 top: 0; 
