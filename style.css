@@ -148,3 +148,11 @@ footer p:first-child {
     font-weight: 500;
     color: #fff;
 }
+header h1,
+.logo,
+.navbar-brand {
+    background: transparent !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
