@@ -1,46 +1,115 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-body { font-family: Arial, sans-serif; background: #f4f4f4; }
-
-.header {
-    height: 60px; background: #c0392b; color: white;
-    display: flex; align-items: center; padding: 0 15px;
-    position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.menu-toggle {
-    width: 30px; height: 25px; background: none; border: none;
-    cursor: pointer; position: relative; z-index: 101; margin-right: 15px;
-}
-.menu-toggle span {
-    display: block; width: 100%; height: 3px; background: white;
-    margin: 5px 0; transition: 0.3s;
-}
-.sidebar.active ~ .header .menu-toggle span:nth-child(1) {
-    transform: rotate(45deg) translate(7px, 7px);
-}
-.sidebar.active ~ .header .menu-toggle span:nth-child(2) { opacity: 0; }
-.sidebar.active ~ .header .menu-toggle span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
+/* Body Biru */
+body {
+    font-family: Arial, sans-serif;
+    background: #2C3E50; /* Biru gelap */
+    color: #fff;
+    padding-top: 60px; /* Jarak buat header */
 }
 
+/* Header Merah */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #C0392B; /* Merah */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1001;
+}
+
+.menu-btn {
+    font-size: 28px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent !important; /* Hapus kotak di belakang teks */
+    color: #fff;
+}
+
+/* Sidebar */
 .sidebar {
-    position: fixed; top: 0; left: -250px; width: 250px; height: 100vh;
-    background: #2c3e50; padding-top: 60px; transition: 0.3s; z-index: 99;
-}
-.sidebar.active { left: 0; }
-.sidebar ul { list-style: none; }
-.sidebar ul li a {
-    display: block; padding: 15px 20px; color: #ecf0f1;
-    text-decoration: none; transition: 0.2s;
-}
-.sidebar ul li a:hover { background: #34495e; padding-left: 25px; }
-.sidebar ul li a.active-link {
-    background: #a93226; font-weight: bold; border-left: 4px solid #fff;
+    position: fixed;
+    top: 60px; /* Di bawah header */
+    left: -250px; /* Sembunyi */
+    width: 250px; /* Lebar sidebar, BUKAN 100% */
+    height: calc(100% - 60px); /* Full tinggi minus header */
+    background: #2C3E50; /* Biru sama kayak body */
+    transition: 0.3s;
+    z-index: 1000;
+    overflow-y: auto;
 }
 
-.overlay {
-    position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
-    background: rgba(0,0,0,0.5); display: none; z-index: 98;
+.sidebar.active {
+    left: 0; /* Muncul */
 }
-.overlay.active { display: block; }
+
+.sidebar ul {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-left: 5px solid transparent;
+}
+
+.sidebar ul li a:hover {
+    background: #34495E;
+    border-left: 5px solid #fff;
+}
+
+/* Overlay Gelap */
+.overlay {
+    position: fixed;
+    top: 60px; /* Mulai dari bawah header */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* Konten */
+main {
+    padding: 30px 20px;
+    min-height: 80vh;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #1a252f; /* Biru lebih gelap dikit */
+    color: #fff;
+}
