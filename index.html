@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER MERAH -->
+    <header class="header">
+        <button class="menu-toggle">☰</button>
+        <h3>Logo Kamu</h3>
+    </header>
+
+    <!-- SIDEBAR KIRI -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#home" class="active-link">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- LAYAR GELAP -->
+    <div class="overlay"></div>
+
+    <!-- ISI KONTEN -->
+    <main class="content">
+        <section id="home" class="halaman aktif">
+            <h1>Selamat Datang di Home</h1>
+            <p>Ini halaman utama.</p>
+        </section>
+
+        <section id="about" class="halaman">
+            <h1>Tentang Kami</h1>
+            <p>Ini halaman about.</p>
+        </section>
+
+        <section id="services" class="halaman">
+            <h1>Layanan</h1>
+            <p>Ini halaman services.</p>
+        </section>
+
+        <section id="contact" class="halaman">
+            <h1>Kontak</h1>
+            <p>Ini halaman contact.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
