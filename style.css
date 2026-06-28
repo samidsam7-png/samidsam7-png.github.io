@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #f4f4f4;
+}
+
+/* HEADER */
+.header {
+    height: 60px;
+    background: #c0392b;
+    color: white;
+    display: flex ;
+    align-items: center;
+    padding: 0 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.menu-toggle {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Sembunyiin ke kiri */
+    width: 250px;
+    height: 100vh;
+    background: #c0392b;
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 99;
+}
+
+.sidebar.active {
+    left: 0; /* Munculin kalo ada class active */
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.sidebar ul li a:hover {
+    background: #a93226;
+}
+
+.sidebar ul li a.active-link {
+    background: #a93226;
+    font-weight: bold;
+}
+
+/* OVERLAY */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 98;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* KONTEN */
+.content { /* Biar gak ketiban header */
+    margin-top: 60px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.halaman {
+    display: none; /* Sembunyiin semua halaman */
+}
+
+.halaman.aktif {
+    display: block; /* Munculin yg aktif doang */
+}
