@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Ambil id dari href="#about" -> "about"
             const targetId = link.getAttribute('href').substring(1);
 
-            // Sembunyiin semua halaman
+            // Sembunyi semua halaman
             halaman.forEach(h => h.classList.remove('aktif'));
             // Munculin halaman yg diklik
             document.getElementById(targetId).classList.add('aktif');
