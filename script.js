@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
             
-            // Ambil id dari href="#about" -> "about"
+            // Ambil id dari href="#Tentang" -> "about"
             const targetId = link.getAttribute('href').substring(1);
 
             // Sembunyi semua halaman
